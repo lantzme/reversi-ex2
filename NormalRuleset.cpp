@@ -25,6 +25,7 @@ std::vector<struct Checker::position> &NormalRuleset::calcPossibleMoves(Player p
 
             // If the checker is in corner #1, check these directions:
             if (i == 0 && j == 0) {
+
                 if (checkRight(checker.getPosition(), player)
                     || checkDown(checker.getPosition(), player)
                     || checkDownRight(checker.getPosition(), player)) {
